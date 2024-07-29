@@ -6,12 +6,11 @@
 	<meta charset="utf-8" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 	<link href='https://fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	
 	<style>
-		html {background: #222222; padding: 40px 200px;font-family: 'Lato', sans-serif;}
+		html {background: #222222; padding: 20px 200px;font-family: 'Lato', sans-serif;}
 		h2,p {color: white;}
 		.gitButton{
 			padding:15px 30px;
@@ -49,7 +48,8 @@
 	<h2>Welcome to the Leaflet easyPrint demo</h2>
 	<p>All this text will be hidden when I print my map.</p>
 	<div id="map" style="height:400px; width:900px"></div>
-	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 	<script src="./leaflet-rnd/dist/leaflet-rnd.js"></script>
 
 	<script>
@@ -76,7 +76,6 @@
 			[51.51, -0.047]
 			]).addTo(map).bindPopup("I am a polygon.");
 
-
 		var popup = L.popup();
 
 		var printer = L.easyPrint({
@@ -93,9 +92,8 @@
 		}
 
 	</script>
-	<p class="testing">So will this boring sentence.</p>
-	<br><br>
-	<a href="https://github.com/k-i-o/leaflet-renderer"><button class="gitButton"><i class="fa fa-github fa-lg"></i>&nbsp;&nbsp;  Download me on github</button></a>
+	<br>
+	<a href="https://github.com/k-i-o/leaflet-renderer"><button class="gitButton">Download me on github</button></a>
 	<button class="manualButton" onclick="manualPrint()">Manual print</button>
 
 </body>
