@@ -44,8 +44,8 @@
 
 </head>
 
-<body class="easyPrint">
-	<h2>Welcome to the Leaflet easyPrint demo</h2>
+<body class="renderer">
+	<h2>Welcome to the Leaflet Renderer demo</h2>
 	<p>All this text will be hidden when I print my map.</p>
 	<div id="map" style="height:400px; width:900px"></div>
 	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -78,7 +78,7 @@
 
 		var popup = L.popup();
 
-		var printer = L.easyPrint({
+		var printer = L.renderer({
       		tileLayer: tiles,
       		sizeModes: ['Current', 'A4Landscape', 'A4Portrait'],
       		filename: 'myMap',
